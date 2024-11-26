@@ -1,0 +1,69 @@
+/* Basic reset */
+
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Map positioned in bottom-left corner */
+.map-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    z-index: 100;
+}
+
+.map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Panorama viewer takes up full space */
+#panorama-viewer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+/* Fullscreen Button */
+#fullscreen-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    z-index: 300;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#fullscreen-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Fullscreen map toggle */
+.fullscreen-map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+}
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.arrow-button:hover {
+    color: red; /* Changes color when hovered */
+}
